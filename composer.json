@@ -1,9 +1,15 @@
 {
-    "name": "sentry/sdk",
+    "name": "jci/sentry-php-sdk",
     "description": "This is a metapackage shipping sentry/sentry with a recommended http client.",
     "type": "metapackage",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/justcontrol-it/sentry-php.git"
+        }
+    ],
     "require": {
-        "sentry/sentry": "^2.1.3",
+        "jci/sentry": "^2.1.3",
         "php-http/curl-client": "^1.0|^2.0",
         "http-interop/http-factory-guzzle": "^1.0"
     },
